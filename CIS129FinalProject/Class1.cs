@@ -33,6 +33,7 @@ namespace CIS129FinalProject
             string UserNum = Console.ReadLine();
 
             // first if statement starts
+           
             if (UserNum == "1")
                 {
                     Console.WriteLine(" Wizert Moves up one space in the array");
@@ -54,14 +55,49 @@ namespace CIS129FinalProject
                     Console.WriteLine(wizert.xPos);
                     Console.WriteLine(wizert.yPos);
                 }
-    //first if statement comes to an end
+            //first if statement comes to an end
+            // do while loop is a complete faluire 
+            //do {
+            //    Console.WriteLine("wizert is ready for action which way do you want to go?");
+            //    UserNum = Console.ReadLine();
+            //    if (UserNum == "1")
+            //    {
+            //        Console.WriteLine(" Wizert Moves up one space in the array");
+            //        wizert.yPos = wizert.yPos + 1;
+            //        Console.WriteLine(wizert.yPos);
+            //        Console.WriteLine(wizert.xPos);
+            //    }
+            //    else if (UserNum == "2")
+            //    {
+            //        Console.WriteLine(" Wizert Moves west one space in the array");
+            //        wizert.xPos = wizert.xPos - 1;
+            //        Console.WriteLine(wizert.xPos);
+            //        Console.WriteLine(wizert.yPos);
+            //    }
+            //    else if (UserNum == "3")
+            //    {
+            //        Console.WriteLine("Wizert moves one space to the east in the array");
+            //        wizert.xPos = wizert.xPos + 1;
+            //        Console.WriteLine(wizert.xPos);
+            //        Console.WriteLine(wizert.yPos);
+            //    }
+            //    else if (UserNum == "4")
+            //        {
+            //    Console.WriteLine("Wizert moves one space to the south in the array");
+            //    wizert.yPos = wizert.yPos - 1;
+            //    Console.WriteLine(wizert.yPos);
+            //    Console.WriteLine(wizert.xPos);
+            //        }
 
-
+            //} while (UserNum != "no");
                 // first attack statement
                 if (wizert.xPos == 2 && wizert.yPos == 0) {
                 Console.WriteLine(" while Adventuring Wizert encounters a goblin, press 1 for attack, 2 for heal, 3 to flee");
-
+                
                 }
+                // im totally stuck The only way this supposed battle encounter even occurs is when the User presses two. but what if they do not press 2?
+               // what if they go up and around and run into the enemey again on a different square.?   and wile repeating this does move Wizert it's kind of hard to keep track
+               //of where hes going or how to plan out a battle encounter. theres got to be an easier way to do this then a never ending if else statement world
         }
     }
 }

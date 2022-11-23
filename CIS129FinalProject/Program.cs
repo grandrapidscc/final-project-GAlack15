@@ -17,6 +17,7 @@ public class Wizert
         this.health = health;
         this.magic = magic;
     }
+
 }
 
     public class Enemies {
