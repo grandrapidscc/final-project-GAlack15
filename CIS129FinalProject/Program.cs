@@ -17,6 +17,10 @@ public class Wizert
         this.health = health;
         this.magic = magic;
     }
+    public void wizertPosition(int xPos, int yPos) {
+        this.xPos = xPos;
+        this.yPos=yPos;
+    }
 
 }
 
@@ -24,11 +28,12 @@ public class Wizert
         public int xPos;
         public int yPos;
         public int health;
-        public Enemies(int xPos, int yPos, int health) {
-            this.xPos = xPos;
-            this.yPos = yPos;
-            this.health = health;
-        }
+    public Enemies(int xPos, int yPos, int health) {
+        this.xPos = xPos;
+        this.yPos = yPos;
+        this.health = health;
+    }
+       
     }
 
         public class powerUps {
