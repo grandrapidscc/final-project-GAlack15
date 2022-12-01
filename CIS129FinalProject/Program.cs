@@ -3,6 +3,16 @@ using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.X86;
 
+
+
+public class room {
+    public Enemies Enemies;
+    public string RoomDescription;
+    public powerUps potions;
+    
+}
+
+
 public class Wizert
 {
     public int xPos;
@@ -17,20 +27,14 @@ public class Wizert
         this.health = health;
         this.magic = magic;
     }
-    public void wizertPosition(int xPos, int yPos) {
-        this.xPos = xPos;
-        this.yPos=yPos;
-    }
 
 }
 
-    public class Enemies {
-        public int xPos;
-        public int yPos;
+public class Enemies {
+       
         public int health;
-    public Enemies(int xPos, int yPos, int health) {
-        this.xPos = xPos;
-        this.yPos = yPos;
+    public Enemies() {
+        
         this.health = health;
     }
        
@@ -85,4 +89,3 @@ public class Wizert
 //    Console.WriteLine("Press 3 to heal");
 //    string attackWizert1 = Console.ReadLine();
 //}
-
