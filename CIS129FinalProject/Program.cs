@@ -6,9 +6,19 @@ using System.Runtime.Intrinsics.X86;
 
 
 public class room {
-    public Enemies Enemies;
-    public string RoomDescription;
-    public powerUps potions;
+    public Enemies Goblin;
+    public Enemies Orc;
+    public Enemies Banshee;
+    public string RoomDescription = "";
+    public powerUps powerPotion;
+    public powerUps HealthPotion;
+    public int xPos;
+    public int yPos;
+
+    public room( int xPos,int yPos) {
+        this.xPos = xPos;
+        this.yPos = yPos;
+    }
     
 }
 
@@ -43,13 +53,9 @@ public class Enemies {
         public class powerUps {
             private int healthPotion = 2;
             private int magickaPotion = 2;
-            public int xPos;
-             public int yPos;
-    public powerUps(int xPos, int yPos)
-            {
-                this.xPos=xPos;
-                this.yPos=yPos;      
-            }
+           public int potionhealth = 0;
+          
+   
         }
 
 //public Characters{}
