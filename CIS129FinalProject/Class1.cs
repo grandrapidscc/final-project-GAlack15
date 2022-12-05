@@ -163,7 +163,7 @@ namespace CIS129FinalProject
                         }
                         else if (attack == "c")
                             {
-                            if (wizert.magic > 0)
+                            if (wizert.magic > 0 & wizert.health < 100)
                             {
                                 Console.WriteLine("you choose to heal yourself, - 5 magic");
                                 wizert.magic = wizert.magic - 5;
@@ -209,7 +209,7 @@ namespace CIS129FinalProject
                         }
                         else if (attack == "c")
                         {
-                            if (wizert.magic > 0)
+                            if (wizert.magic > 0 & wizert.health < 100)
                             {
                                 Console.WriteLine("you choose to heal yourself, - 5 magic");
                                 wizert.magic = wizert.magic - 5;
@@ -257,7 +257,7 @@ namespace CIS129FinalProject
                         }
                         else if (attack == "c")
                         {
-                            if (wizert.magic > 0)
+                            if (wizert.magic > 0 & wizert.health < 100 )
                             {
                                 Console.WriteLine("you choose to heal yourself, - 5 magic");
                                 wizert.magic = wizert.magic - 5;
@@ -316,6 +316,9 @@ namespace CIS129FinalProject
                 } }
             // ask user a question.
             Console.WriteLine("You the all powerful Wizert sought out new magical knowledge");
+            Console.WriteLine("Your healing abilities lvl up, however you cannot heal beyoned 100 hp");
+            Console.WriteLine(" Mage powers level up!  you have aquired the spell 'FireBall' does 3 damage.");
+            Console.WriteLine();
             Console.WriteLine("after successfully obtaining what you sought and completing the quest");
             Console.WriteLine("you find the only way to leave the Sorcerer's Tower, is to go through an old dungeon");
             Console.WriteLine(Description.RoomDescription);
@@ -332,7 +335,7 @@ namespace CIS129FinalProject
                
                 if (UserNum == "1")
               {
-                    Console.WriteLine(" Wizert Moves up one space in the array");
+                    Console.WriteLine(" Wizert Moves up one space ");
                     wizert.yPos = wizert.yPos + 1;
                     Description.yPos = Description.yPos + 1;
                     //Console.WriteLine(" wizerts y coordinate is " + wizert.yPos);
@@ -340,7 +343,7 @@ namespace CIS129FinalProject
                }
                 else if (UserNum == "2")
                 {
-                    Console.WriteLine(" Wizert Moves west one space in the array");
+                    Console.WriteLine(" Wizert Moves west one space ");
                     wizert.xPos = wizert.xPos - 1;
                     Description.xPos = Description.xPos - 1;
                     //Console.WriteLine("wizerts x coordinate is " + wizert.xPos);
@@ -348,7 +351,7 @@ namespace CIS129FinalProject
                 }
                 else if (UserNum == "3")
                 {
-                    Console.WriteLine("Wizert moves one space to the east in the array");
+                    Console.WriteLine("Wizert moves one space to the east ");
                    wizert.xPos = wizert.xPos + 1;
                     Description.xPos = Description.xPos + 1;
                    // Console.WriteLine("wizerts x coordinate is " + wizert.xPos);
@@ -358,7 +361,7 @@ namespace CIS129FinalProject
              
                 else if (UserNum == "4")
                 {
-               Console.WriteLine("Wizert moves one space to the south in the array");
+               Console.WriteLine("Wizert moves one space to the south ");
                 wizert.yPos = wizert.yPos - 1;
                 Description.yPos = Description.yPos - 1;
                 //Console.WriteLine(" wizerts y coordinate is " + wizert.yPos);
