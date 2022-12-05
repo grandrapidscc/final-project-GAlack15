@@ -274,7 +274,7 @@ namespace CIS129FinalProject
                 if (Description.powerPotion != null && Description.powerPotion.potionhealth != 0) {             
                     Console.WriteLine("in an old chest, you find an old potion,");
                     Console.WriteLine(" using your enchantments, you use the potion and increase your magic level");
-                wizert.magic = wizert.magic + 5;
+                wizert.magic = wizert.magic + 20;
                     Description.powerPotion.potionhealth = 0;
 
                 }
@@ -284,7 +284,7 @@ namespace CIS129FinalProject
                     Console.WriteLine("under broken rubble you find a potion, with a strange green liquid");
                     Console.WriteLine("while adding some herbs, you use an enchantment to consume the green potion and" +
                         " your health lvl goes up");
-                    wizert.health = wizert.health + 5;
+                    wizert.health = wizert.health + 10;
                     Description.HealthPotion.potionhealth = 0;
                 }
             }
